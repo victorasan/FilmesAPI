@@ -20,11 +20,5 @@ namespace FilmesAPI.Controllers
             filmes.Add(filme);
             Console.WriteLine(filme.Titulo);
         }
-
-        [HttpGet]
-        public async Task<ActionResult<IEnumerable<Filme>>> GetFilmes()
-        {
-            return filmes.ToList();
-        }
     }
 }
