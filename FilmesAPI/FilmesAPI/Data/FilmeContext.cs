@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using FilmesAPI.Models;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,6 +14,6 @@ namespace FilmesAPI.Data
             
         }
 
-        public DbSet<FilmeContext> Filmes { get; set; }
+        public DbSet<Filme> Filmes { get; set; }
     }
 }
